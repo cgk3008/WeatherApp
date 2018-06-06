@@ -11,10 +11,11 @@ namespace WeatherApp
 	{
 		public App ()
 		{
-			InitializeComponent();
+            //InitializeComponent();
 
-			MainPage = new WeatherApp.MainPage();
-		}
+            //MainPage = new WeatherApp.MainPage();
+            MainPage = new NavigationPage(new WeatherPage());
+        }
 
 		protected override void OnStart ()
 		{
